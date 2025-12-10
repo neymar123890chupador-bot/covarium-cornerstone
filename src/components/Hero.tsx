@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* Logo */}
         <div className="mb-6 relative">
-          <div className="w-32 h-32 md:w-44 md:h-44 overflow-hidden animate-float">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden glow-blue animate-float">
             <img 
               src={serverLogo} 
               alt="Covarium" 
