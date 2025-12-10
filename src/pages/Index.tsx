@@ -38,7 +38,7 @@ const Index = () => {
           {/* Footer */}
           <footer className="mt-16 py-8 border-t border-border/30 text-center">
             <p className="text-muted-foreground">
-              © 2024 <span className="text-accent font-semibold">Covarium</span>. Todos os direitos reservados.
+              © 2026 <span className="text-accent font-semibold">Covarium</span>. Todos os direitos reservados.
             </p>
             <p className="text-sm text-muted-foreground/60 mt-2">
               Feito com 💙 pela equipe Covarium
