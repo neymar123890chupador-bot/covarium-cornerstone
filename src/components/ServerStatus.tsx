@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Users, Wifi, WifiOff, Copy, Check } from 'lucide-react';
-import serverIcon from '@/assets/server-icon.png';
+import serverLogo from '@/assets/server-logo.png';
 
 interface ServerStatusData {
   online: boolean;
@@ -55,12 +55,11 @@ const ServerStatus = () => {
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
         {/* Server Icon */}
         <div className="relative">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden glow-blue animate-float">
+          <div className="w-32 h-32 md:w-40 md:h-40 overflow-hidden animate-float">
             <img 
-              src={serverIcon} 
-              alt="Covarium Server Icon" 
-              className="w-full h-full object-cover"
-              style={{ imageRendering: 'pixelated' }}
+              src={serverLogo} 
+              alt="Covarium Server Logo" 
+              className="w-full h-full object-contain"
             />
           </div>
           <div 
