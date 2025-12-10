@@ -1,6 +1,13 @@
 import serverIcon from '@/assets/server-icon.png';
 
 const Hero = () => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <header className="relative py-12 md:py-20 overflow-hidden">
       {/* Background Effects */}
@@ -17,6 +24,7 @@ const Hero = () => {
               src={serverIcon} 
               alt="Covarium" 
               className="w-full h-full object-cover"
+              style={{ imageRendering: 'pixelated' }}
             />
           </div>
           <div className="absolute -inset-4 bg-primary/20 rounded-full blur-xl -z-10" />
@@ -35,18 +43,18 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <a 
-            href="#status" 
+          <button 
+            onClick={() => scrollTo('status')}
             className="px-8 py-3 bg-primary hover:bg-primary/80 text-primary-foreground font-orbitron font-bold rounded-xl transition-all duration-300 glow-blue hover:scale-105"
           >
             JOGAR AGORA
-          </a>
-          <a 
-            href="#regras" 
+          </button>
+          <button 
+            onClick={() => scrollTo('regras')}
             className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground font-orbitron font-bold rounded-xl border border-border hover:border-primary transition-all duration-300"
           >
             VER REGRAS
-          </a>
+          </button>
         </div>
       </div>
     </header>

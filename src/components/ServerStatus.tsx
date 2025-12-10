@@ -60,6 +60,7 @@ const ServerStatus = () => {
               src={serverIcon} 
               alt="Covarium Server Icon" 
               className="w-full h-full object-cover"
+              style={{ imageRendering: 'pixelated' }}
             />
           </div>
           <div 
