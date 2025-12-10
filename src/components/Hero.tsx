@@ -1,4 +1,4 @@
-import serverIcon from '@/assets/server-icon.png';
+import serverLogo from '@/assets/server-logo.png';
 
 const Hero = () => {
   const scrollTo = (id: string) => {
@@ -19,12 +19,11 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* Logo */}
         <div className="mb-6 relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden glow-blue animate-float">
+          <div className="w-32 h-32 md:w-44 md:h-44 overflow-hidden animate-float">
             <img 
-              src={serverIcon} 
+              src={serverLogo} 
               alt="Covarium" 
-              className="w-full h-full object-cover"
-              style={{ imageRendering: 'pixelated' }}
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="absolute -inset-4 bg-primary/20 rounded-full blur-xl -z-10" />
