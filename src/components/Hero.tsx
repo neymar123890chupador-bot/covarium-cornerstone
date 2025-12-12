@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
 import serverLogo from '@/assets/server-logo.png';
 
@@ -21,20 +20,14 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center text-center">
-        {/* Logo */}
-        <div className="mb-6 relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden glow-blue animate-float">
-            <img 
-              src={serverLogo} 
-              alt="Covarium" 
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="absolute -inset-4 bg-primary/20 rounded-full blur-xl -z-10" />
-        </div>
-
-        {/* Title */}
-        <h1 className="font-orbitron text-5xl md:text-7xl font-black text-foreground mb-4 tracking-wider">
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <button 
+            onClick={() => scrollTo('regras')}
+            className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground font-orbitron font-bold rounded-xl border border-border hover:border-primary transition-all duration-300"
+          >
+            VER REGRAS
+          </button>
           <span className="text-primary glow-text">COVA</span>
           <span className="text-accent">RIUM</span>
         </h1>
@@ -47,6 +40,7 @@ const Hero = () => {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-4">
           <button 
+<<<<<<< HEAD
             onClick={() => scrollTo('status')}
             className="px-8 py-3 bg-primary hover:bg-primary/80 text-primary-foreground font-orbitron font-bold rounded-xl transition-all duration-300 glow-blue hover:scale-105"
           >
@@ -54,6 +48,9 @@ const Hero = () => {
           </button>
           <button 
             onClick={() => navigate('/regras')}
+=======
+            onClick={() => scrollTo('regras')}
+>>>>>>> c392326 (Remove botão Jogar Agora)
             className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground font-orbitron font-bold rounded-xl border border-border hover:border-primary transition-all duration-300"
           >
             VER REGRAS
