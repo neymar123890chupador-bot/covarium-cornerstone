@@ -4,19 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // CONFIG OBRIGATÓRIA PARA FUNCIONAR NO GITHUB PAGES
-  base: "/covarium-cornerstone/",
-
+  base: "/", // NECESSÁRIO PRA DOMÍNIO PERSONALIZADO FUNCIONAR NO GITHUB PAGES
   server: {
     host: "::",
     port: 8080,
   },
-
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-  ].filter(Boolean),
-
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
