@@ -59,7 +59,7 @@ const Hero = () => {
             VER REGRAS
           </button>
           <a 
-            href="https://discord.gg/2rA2nhZY"
+            href="https://discord.gg/7ybs7H4v"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white font-orbitron font-bold rounded-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
