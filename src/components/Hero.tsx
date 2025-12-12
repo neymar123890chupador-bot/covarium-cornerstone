@@ -1,10 +1,19 @@
 import { MessageCircle } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import serverLogo from '@/assets/server-logo.png';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const handleRegras = () => {
+    if (location.pathname === '/') scrollTo('regras');
+    else navigate('/regras');
   };
 
   return (
@@ -33,7 +42,7 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <button
-            onClick={() => scrollTo('regras')}
+            onClick={handleRegras}
             className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground font-orbitron font-bold rounded-xl border border-border hover:border-primary transition-all duration-300"
           >
             VER REGRAS

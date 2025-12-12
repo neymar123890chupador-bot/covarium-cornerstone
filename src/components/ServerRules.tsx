@@ -66,7 +66,7 @@ const rules = [
 
 const ServerRules = () => {
   return (
-    <section className="glass-card rounded-2xl p-6 md:p-8">
+    <section id="regras" className="glass-card rounded-2xl p-6 md:p-8">
       <h2 className="font-orbitron text-2xl md:text-3xl font-bold text-primary mb-8 glow-text text-center">
         Regras do Servidor
       </h2>
