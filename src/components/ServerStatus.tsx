@@ -47,7 +47,7 @@ const ServerStatus = () => {
   };
 
   return (
-    <section className="glass-card rounded-2xl p-6 md:p-8 glow-blue">
+    <section id="status" className="glass-card rounded-2xl p-6 md:p-8 glow-blue">
       <h2 className="font-orbitron text-2xl md:text-3xl font-bold text-primary mb-6 glow-text text-center">
         Status do Servidor
       </h2>
