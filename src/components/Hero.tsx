@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+import { MessageCircle } from 'lucide-react';
 import serverLogo from '@/assets/server-logo.png';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -49,11 +53,20 @@ const Hero = () => {
             JOGAR AGORA
           </button>
           <button 
-            onClick={() => scrollTo('regras')}
+            onClick={() => navigate('/regras')}
             className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground font-orbitron font-bold rounded-xl border border-border hover:border-primary transition-all duration-300"
           >
             VER REGRAS
           </button>
+          <a 
+            href="https://discord.gg/2rA2nhZY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white font-orbitron font-bold rounded-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+          >
+            <MessageCircle className="w-5 h-5" />
+            DISCORD
+          </a>
         </div>
       </div>
     </header>
