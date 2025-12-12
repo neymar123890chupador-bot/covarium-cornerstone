@@ -19,7 +19,7 @@ const ServerStatus = () => {
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
   
-  const serverIP = 'survivalcovarium.qzz.io';
+  const serverIP = 'jogar.covarium.qzz.io:25566';
 
   useEffect(() => {
     const fetchStatus = async () => {
